@@ -1,5 +1,6 @@
-//desiredspeed = ?
-//motorspeed = desiredspeed
+int desiredSpeed = 10;// m/s
+int motorSpeed = desiredSpeed;//not m/s.
+
 void setup() {
   //set up pins for motor and accelerometer
 }
