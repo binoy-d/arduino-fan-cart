@@ -17,7 +17,13 @@ void setup() {
 
 void loop() {
   //currentspeed = read(accelerometer)
+    if(currentSpeed < desiredSpeed){
+        motorSpeed++;
+    }else{
+        motorSpeed--;   
+    }
   //if currentspeed < desiredspeed, motorspeed ++
   //else,  motorspeed --
   //set motor's speed to motorspeed
+         motor.setSpeed(motorSpeed);
 }
